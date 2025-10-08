@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function UseState() {
   const data = {
@@ -8,12 +8,17 @@ export default function UseState() {
   };
 
   const [selectItem, setSelectItem] = useState("Kerala");
-  const [selectCapital,setSelectedCapital]=useState("Thiruvananthapuram")
+  const [selectCapital, setSelectedCapital] = useState("Thiruvananthapuram");
 
-function changeState(e){
-    setSelectItem(e.target.value)
-    setSelectedCapital(data[e.target.value])
-}
+  function changeState(e) {
+    setSelectItem(e.target.value);
+  }
+
+  function changeCapital() {
+    setSelectedCapital(data[selectItem]);
+  }
+
+  useEffect(changeCapital, [selectItem]);
 
   return (
     <div>
