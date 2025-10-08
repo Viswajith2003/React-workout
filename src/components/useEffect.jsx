@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function UseState() {
+export default function UseEffect() {
   const data = {
     Kerala: "Thiruvananthapuram",
     TamilNadu: "Chennai",
@@ -14,11 +14,15 @@ export default function UseState() {
     setSelectItem(e.target.value);
   }
 
-  function changeCapital() {
-    setSelectedCapital(data[selectItem]);
-  }
+//   const changeCapital = () => {
+//     setSelectedCapital(data[selectItem]);
+//   };
 
-  useEffect(changeCapital, [selectItem]);
+  //   useEffect(changeCapital, [selectItem]);
+  
+  useEffect(() => {
+    setSelectedCapital(data[selectItem]);
+  }, [selectItem]);
 
   return (
     <div>

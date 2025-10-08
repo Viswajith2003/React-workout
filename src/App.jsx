@@ -1,7 +1,8 @@
 import Cards from "./components/Cards";
 import Counter from "./components/Counter";
 import Map from "./components/map";
-import UseState from "./components/useState";
+import UseEffect from "./components/useEffect";
+import UseRef from "./components/useRef";
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
 
       {/* <Counter/> */}
       {/* <Map/> */}
-      <UseState/>
+      {/* <UseEffect/> */}
+      {/* <UseRef/> */}
+      
 
     </div>
   );
