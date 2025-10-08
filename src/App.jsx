@@ -1,6 +1,7 @@
 import Cards from "./components/Cards";
 import Counter from "./components/Counter";
 import Map from "./components/map";
+import UseState from "./components/useState";
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Cards title='title-2' content="content-2"/> */}
 
       {/* <Counter/> */}
-      <Map/>
+      {/* <Map/> */}
+      <UseState/>
 
     </div>
   );
