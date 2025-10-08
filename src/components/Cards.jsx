@@ -1,10 +1,20 @@
 export default function Cards({ title, content }) {
-  // console.log(props);
-  // const {title,content}=props
+  const cardStyle = {
+    backgroundColor: "#f7f7f7",
+    padding: "10px",
+    borderRadius: "5px",
+    margin: "10px",
+    color: "black",
+  };
+
+  
+
   return (
-    <div>
-      <h1>Card Title : {title}</h1>
-      <p>Card Content : {content}</p>
+    <div className="root">
+      <div style={cardStyle}>
+        <h1>{title}</h1>
+        <p>{content}</p>
+      </div>
     </div>
   );
 }
