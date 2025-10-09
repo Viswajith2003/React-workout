@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { countContext } from "../App";
 
 export default function Counter() {
-  const [counter, setCounter] = useState(0);
+  const { counter, setCounter } = useContext(countContext);
   return (
     <div>
       <h1>Counter: {counter}</h1>

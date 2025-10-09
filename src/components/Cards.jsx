@@ -1,4 +1,7 @@
-export default function Cards({ title, content }) {
+import { useContext } from "react";
+import { countContext } from "../App";
+
+export default function Cards() {
   const cardStyle = {
     backgroundColor: "#f7f7f7",
     padding: "10px",
@@ -7,13 +10,13 @@ export default function Cards({ title, content }) {
     color: "black",
   };
 
-  
+  const { counter } = useContext(countContext);
 
   return (
-    <div className="root">
+    <div>
       <div style={cardStyle}>
-        <h1>{title}</h1>
-        <p>{content}</p>
+        <h1>My card</h1>
+        <p>Current count is:{counter}</p>
       </div>
     </div>
   );
