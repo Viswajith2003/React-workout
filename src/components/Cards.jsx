@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import { countContext } from "../App";
+import useCount from "../Hooks/useCount";
 
 export default function Cards() {
   const cardStyle = {
@@ -10,7 +9,7 @@ export default function Cards() {
     color: "black",
   };
 
-  const { counter } = useContext(countContext);
+  const { counter } = useCount()
 
   return (
     <div>
