@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Cards from "./Cards";
+import Cards from "../useContextEg/Cards";
 
 export default function GetPosts() {
   const [posts, setPosts] = useState([]);
@@ -14,9 +14,8 @@ export default function GetPosts() {
   return (
     <div>
       {posts.map((post) => (
-        <Cards title={post.title} content={post.body}/>
+        <Cards title={post.title} content={post.body} />
       ))}
-      
     </div>
   );
 }
