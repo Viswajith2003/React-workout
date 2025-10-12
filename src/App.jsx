@@ -12,14 +12,14 @@ function App() {
     <div>
       {/* <Cards title='title-1' content="content-1"/>
       <Cards title='title-2' content="content-2"/> */}
-      <CountProvider>
+      {/* <CountProvider>
         <Counter />
         <Cards />
         <Cards />
         <Cards />
-      </CountProvider>
+      </CountProvider> */}
       {/* <Map/> */}
-      {/* <UseEffect/> */}
+      <UseEffect/>
       {/* <UseRef/> */}
       {/* <GetQuotes/> */}
       {/* <GetPosts/> */}
