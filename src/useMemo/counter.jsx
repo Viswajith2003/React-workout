@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, memo } from "react";
 
 // ✅ React.memo prevents unnecessary re-renders if props don't change
-function CounterMemo({ onClick }) {
-  const [count, setCount] = React.useState(0);
+function CounterMemo() {
+  const [count, setCount] = useState(0);
 
-  console.log("👶 Child rendering");
+  console.log("Child rendering");
 
   return (
     <div style={{ border: "1px solid gray", padding: "10px" }}>
@@ -14,4 +14,4 @@ function CounterMemo({ onClick }) {
   );
 }
 
-export default CounterMemo;
+export default memo(CounterMemo);
