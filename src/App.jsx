@@ -10,11 +10,12 @@ import CountProvider from "./providers/contextProvider";
 
 import CounterMemo from "./useMemo/counter";
 import { useCallback, useState } from "react";
+import UseLayoutEffect from "./components/UseLayoutEffects";
+import UseReducer from "./components/UseReducer";
 
 function App() {
   // const [text, setText] = useState("");
 
- 
   // const handleClick = () => {
   //   console.log("Child button clicked");
   // };
@@ -43,7 +44,9 @@ function App() {
       {/* <Map/> */}
       {/* <UseEffect/> */}
 
-      <UseRef/>
+      {/* <UseRef/> */}
+      {/* <UseLayoutEffect /> */}
+      <UseReducer/>
       {/* <GetQuotes/> */}
       {/* <GetPosts/> */}
 
