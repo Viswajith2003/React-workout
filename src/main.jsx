@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css"
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import router from "./lib/router"; // your router file path
+import router from "./lib/router"; 
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -32,7 +32,7 @@ export default function UseEffect() {
 
   useEffect(() => {
     setBoom(false);
-    const id=setTimeout(() => {
+    const id = setTimeout(() => {
       setBoom(true);
     }, count * 1000);
     return () => {
@@ -40,6 +40,8 @@ export default function UseEffect() {
       clearTimeout(id);
     };
   }, [count]);
+
+  
 
   return (
     <div>
