@@ -3,6 +3,7 @@ import ChangeFirstName from "./useStateWorkout/ChangeFirstName";
 import ToggleText from "./useStateWorkout/toggleText";
 import CounterLimit from "./useStateWorkout/CounterLimit";
 import ShowHideText from "./useStateWorkout/ShowHideText";
+import UpperLowerToggle from "./useStateWorkout/upperLowerToggle";
 
 export default function App() {
 
@@ -11,7 +12,8 @@ export default function App() {
       {/* <ChangeFirstName/> */}
       {/* <ToggleText/> */}
       {/* <CounterLimit/> */}
-      <ShowHideText/>
+      {/* <ShowHideText/> */}
+      <UpperLowerToggle/>
     </div>
   );
 }
