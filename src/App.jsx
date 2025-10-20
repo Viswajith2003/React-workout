@@ -2,6 +2,7 @@ import React from "react";
 import ChangeFirstName from "./useStateWorkout/ChangeFirstName";
 import ToggleText from "./useStateWorkout/toggleText";
 import CounterLimit from "./useStateWorkout/CounterLimit";
+import ShowHideText from "./useStateWorkout/ShowHideText";
 
 export default function App() {
 
@@ -9,7 +10,8 @@ export default function App() {
     <div>
       {/* <ChangeFirstName/> */}
       {/* <ToggleText/> */}
-      <CounterLimit/>
+      {/* <CounterLimit/> */}
+      <ShowHideText/>
     </div>
   );
 }
