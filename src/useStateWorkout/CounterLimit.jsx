@@ -1,16 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import useCounter from "../Hooks/useCounter";
 
 export default function CounterLimit() {
-  const [count, setCount] = useState(0);
+  const [count, increment, decrement] = useCounter();
 
-  const increment = () => {
-    setCount(count + 1);
-  };
-  const decrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  };
   return (
     <div>
       <h1>{count}</h1>

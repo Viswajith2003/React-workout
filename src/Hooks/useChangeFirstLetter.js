@@ -13,8 +13,4 @@ export default function useChangeFirstLetter(inputStr = "") {
   return { changeName, firstLetterChange };
 }
 
-// export default function useCounter(){
-//   const [count,setCount]=useState(0);
 
-//   setCount((count)=>count+1)
-// }
