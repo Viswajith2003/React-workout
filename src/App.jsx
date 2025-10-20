@@ -1,13 +1,15 @@
 import React from "react";
 import ChangeFirstName from "./useStateWorkout/ChangeFirstName";
 import ToggleText from "./useStateWorkout/toggleText";
+import CounterLimit from "./useStateWorkout/CounterLimit";
 
 export default function App() {
 
   return (
     <div>
       {/* <ChangeFirstName/> */}
-      <ToggleText/>
+      {/* <ToggleText/> */}
+      <CounterLimit/>
     </div>
   );
 }

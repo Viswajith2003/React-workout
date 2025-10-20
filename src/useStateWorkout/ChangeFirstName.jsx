@@ -1,5 +1,5 @@
 import React from "react";
-import useChangeFirstLetter from "../Hooks/useChangeFirstLetter";
+import useChangeFirstLetter from "../Hooks/customHooks";
 
 export default function ChangeFirstName() {
   const { changeName, firstLetterChange } = useChangeFirstLetter("viswajith");
