@@ -6,6 +6,7 @@ import ShowHideText from "./useStateWorkout/ShowHideText";
 import UpperLowerToggle from "./useStateWorkout/upperLowerToggle";
 import ChangeBgColor from "./useStateWorkout/changeBgColor";
 import RevText from "./useStateWorkout/revText";
+import TextCount from "./useStateWorkout/textCount";
 
 export default function App() {
 
@@ -17,7 +18,8 @@ export default function App() {
       {/* <ShowHideText/> */}
       {/* <UpperLowerToggle/> */}
       {/* <ChangeBgColor/> */}
-      <RevText/>
+      {/* <RevText/> */}
+      <TextCount/>
     </div>
   );
 }
