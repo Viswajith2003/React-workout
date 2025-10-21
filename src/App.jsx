@@ -7,6 +7,7 @@ import UpperLowerToggle from "./useStateWorkout/upperLowerToggle";
 import ChangeBgColor from "./useStateWorkout/changeBgColor";
 import RevText from "./useStateWorkout/revText";
 import TextCount from "./useStateWorkout/textCount";
+import AddRemoveItem from "./useStateWorkout/addRemoveItem";
 
 export default function App() {
 
@@ -19,7 +20,8 @@ export default function App() {
       {/* <UpperLowerToggle/> */}
       {/* <ChangeBgColor/> */}
       {/* <RevText/> */}
-      <TextCount/>
+      {/* <TextCount/> */}
+      <AddRemoveItem/>
     </div>
   );
 }
