@@ -9,13 +9,21 @@ export default function AddRemoveItem() {
   };
 
   const addItem = () => {
+    if (!text) return;
     setItems([...items, text]);
     setText("");
   };
 
-  const deleteItem=()=>{
-    
-  }
+  const deleteItem = (ClickedValue) => {
+    setItems(items.filter((item) => item !== ClickedValue));
+  };
+
+  // items = ["apple", "banana", "mango"];
+  // ClickedValue = "banana"; // the item you clicked to delete
+
+  // Is "apple" not equal to "banana"? ✅ (keep it)
+  // Is "banana" not equal to "banana"? ❌ (remove it)
+  // Is "mango" not equal to "banana"? ✅ (keep it)
 
   return (
     <div>
@@ -29,8 +37,7 @@ export default function AddRemoveItem() {
       <ul>
         {items.map((item) => (
           <li>
-            {item} {" "}
-            <button onClick={deleteItem}>delete</button>
+            {item} <button onClick={() => deleteItem(item)}>delete</button>
           </li>
         ))}
       </ul>
