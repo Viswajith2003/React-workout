@@ -4,6 +4,8 @@ import ToggleText from "./useStateWorkout/toggleText";
 import CounterLimit from "./useStateWorkout/CounterLimit";
 import ShowHideText from "./useStateWorkout/ShowHideText";
 import UpperLowerToggle from "./useStateWorkout/upperLowerToggle";
+import ChangeBgColor from "./useStateWorkout/changeBgColor";
+import RevText from "./useStateWorkout/revText";
 
 export default function App() {
 
@@ -13,7 +15,9 @@ export default function App() {
       {/* <ToggleText/> */}
       {/* <CounterLimit/> */}
       {/* <ShowHideText/> */}
-      <UpperLowerToggle/>
+      {/* <UpperLowerToggle/> */}
+      {/* <ChangeBgColor/> */}
+      <RevText/>
     </div>
   );
 }
