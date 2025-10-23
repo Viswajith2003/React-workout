@@ -8,6 +8,8 @@ import ChangeBgColor from "./useStateWorkout/changeBgColor";
 import RevText from "./useStateWorkout/revText";
 import TextCount from "./useStateWorkout/textCount";
 import AddRemoveItem from "./useStateWorkout/addRemoveItem";
+import FindLongestWord from "./useStateWorkout/findLongestWord";
+import DisableBtn from "./useEffectWorkout/disableBtn";
 
 export default function App() {
 
@@ -21,7 +23,10 @@ export default function App() {
       {/* <ChangeBgColor/> */}
       {/* <RevText/> */}
       {/* <TextCount/> */}
-      <AddRemoveItem/>
+      {/* <AddRemoveItem/> */}
+      {/* <FindLongestWord/> */}
+
+      <DisableBtn/>
     </div>
   );
 }
